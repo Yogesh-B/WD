@@ -1,0 +1,26 @@
+body{
+  /* background:linear-gradient(45deg,red,green); */
+}
+span{
+  background-color:#f7737e;
+  width: 100px;
+  height: 100px;
+  display: block;
+  float: left;
+  clear: right;
+}
+div{
+  background-color:#62dcfa;
+  width: 45%;
+  height: 200px;
+  /* display: inline-block; */
+  float: right;
+  clear: right;
+}
+p{
+  background-color: #5ff359;
+  height: 200px;
+  width: 200px;
+  clear: right;
+  font-variant: small-caps;
+}

@@ -1,0 +1,30 @@
+@font-face
+{
+  font-family:custom1;
+  src:url('../../../fonts/Ruthie-Regular.ttf');
+}
+@font-face
+{
+  font-family:custom2;
+  src:url('../../../fonts/Akronim-Regular.ttf');
+}
+
+h1
+{
+ font-family:custom1;
+}
+h2{
+  font-family: custom2;
+}
+a{
+  background-color: #1ada7e;
+  height: 50px;
+  width: 50px;
+  /* display: inline-block; */
+}
+section{
+  background-color:#32c7ec;
+  width: 500px;
+  height: 500px;
+  /* display: inline; */
+}
