@@ -1,0 +1,13 @@
+/* .container-fluid{
+    background:#5ae1e6;
+} */
+.col-sm-12>h1{
+    text-align: center;
+}
+section{
+    /*temporary*/
+    margin:100px 0px;
+}
+/* body>div.container-fluid{
+    background-color:#343a40;
+} */
