@@ -7,99 +7,176 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style1.css" />
     <style>
-        body {
-            position: relative;
+        .navbar {
+            /* display: none; */
         }
 
-        .affix ~ .container-fluid{
-            position: relative;
-            top: 50px;
+        div>.col-sm-12 {
+            margin: 100px 0px;
         }
     </style>
+
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
 
-    <div class="container-fluid text-center" style="height:200px;">
-        <h1>Hi, Welcome to My WebResume...!!!</h1>
+
+                                        <!-- navigationbar -->
+    <nav class="navbar navbar-expand-sm navbar-inverse fixed-top navbar-dark bg-dark" data-spy="affix"
+        data-offset-top="197">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar1">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">My Web Resume</a>
+        </div>
+     
+        <div class="collapse navbar-collapse" id="navbar1">
+            <ul class="navbar-nav nav">
+                <li class="nav-item"><a href="#about_me" class="nav-link">About Me</a></li>
+                <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                <li class="nav-item"><a href="#certificates" class="nav-link">Certificates</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <button onclick="topFunction()" id="topBtn" title="Go to top"><i style="font-size:24px" class="fa">&#xf062;</i></button>
+
+
+                                        <!-- sections of content -->
+    <div class="row text-center">
+        <section class="col-sm-12 container-fluid" id="about_me" style="padding-top:70px;padding-bottom:70px">
+            <h1>About Me</h1>
+            <p>I am Yogesh Bavishi, a Computer Engineering student from <abbr title="Government Engineering College, Rajkot">GEC Rajkot</abbr>.
+                I belong to Barvala Bavishi, a village in Amreli(Gujarat). I like to try new apps and softwares on PC and smartphone. 
+            </p>
+        </section>
+        <section class="col-sm-12  container-fluid" id="education" style="padding-top:70px;padding-bottom:70px">
+            <h1>Education</h1>
+            <div class="table-responsive-sm">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Course/Degree</th>
+                            <th>Board/University</th>
+                            <th>School/College</th>
+                            <th>Year of Completion</th>
+                            <th>Percentage/Grade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>B.E. (Computer Engineering)</td>
+                            <td>Gujarat Technological University</td>
+                            <td><abbr title="Goverment Engineering College, Rajkot">GEC Rajkot</abbr></td>
+                            <td>2021</td>
+                            <td>8.05(sem6 CGPA)</td>
+                        </tr>
+                        <tr>
+                            <td>12th (HSC)</td>
+                            <td><abbr title="Gujarat Secondary and Higher Secondary Education Board">GSHSEB</abbr></td>
+                            <td>Shree Swaminarayan Gurukul, Taravada</td>
+                            <td>2017</td>
+                            <td>85.69</td>
+                        </tr>
+                        <tr>
+                            <td>10th (SSC)</td>
+                            <td><abbr title="Gujarat Secondary and Higher Secondary Education Board">GSHSEB</abbr></td>
+                            <td>B.J. Doshi Highschool, Amrapur</td>
+                            <td>2015</td>
+                            <td>80.16</td>
+                        </tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td></tr>
+                    </tbody>
+                </table>
+            </div>  
+        </section>
+
+        <section class="col-sm-12 container-fluid" id="certificates" style="padding-top:70px;padding-bottom:70px">
+            <h1>Certificates</h1>
+            <ul class="list-group">
+                <li class="list-group-item">Building Database Applications in PHP <a href="https://www.coursera.org/account/accomplishments/records/5VTNF4475JY9" class="small">Verifiable On Coursera</a></li>
+                <li class="list-group-item">Interactivity with JavaScript <a href="https://www.coursera.org/account/accomplishments/records/JMJ6H6D38C29" class="small">Verifiable On Coursera</a></li>
+                <li class="list-group-item">Advanced Styling with Responsive Design <a href="https://www.coursera.org/account/accomplishments/records/U8LFXMFCQYHT" class="small">Verifiable On Coursera</a></li>
+                <li class="list-group-item">Fundamentals of Graphic Design <a href="https://www.coursera.org/account/accomplishments/records/9BZJ9XKJXPRM" class="small">Verifiable On Coursera</a></li>
+                <li class="list-group-item">Introduction to Typography <a href="https://www.coursera.org/account/accomplishments/records/FXEUHWSQAPQE" class="small">Verifiable On Coursera</a></li>
+            </ul>
+        </section>
+        <section class="col-sm-12 container-fluid" id="portfolio" style="padding-top:70px;padding-bottom:70px">
+            <h1>Portfolio </h1>
+            <p>Final project of course "Building Database Applications in PHP"...<a href="http://gecr.byethost6.com/wa4e/week5code/index.php">Visit</a></p>
+            <p>Final project of course "Introduction to Typography"...<a href="https://github.com/Yogesh-B/GD/raw/master/typeWeek4.pdf">Visit</a></p>
+        </section>
     </div>
 
-    <nav class="navbar navbar-expand-sm navbar-inverse navbar-dark bg-dark" data-spy="affix" data-offset-top="197">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar1">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <a class="navbar-brand" href="#">Yogesh's Resume</a>
-            </div>
-            <div>
-                <div class="collapse navbar-collapse" id="navbar1">
-                    <ul class="navbar-nav nav navbar-pills ">
-                        <li class="nav-item"><a href="#about_me" class="nav-link">About Me</a></li>
-                        <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
-                        <li class="nav-item"><a href="#certificates" class="nav-link">Certificates</a></li>
-                        <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+
+                                    <!-- footer for contact details -->
+    <footer class="page-footer font-small pt-4">
+        <div class="container-fluid text-center text-md-left">
+            <div class="row">
+                <div class="col-sm-6 mt-md-0 mt-3">
+                    <h5 class="text-uppercase" id="contact">Contact</h5>
+                </div>
+                
+                <hr class="clearfix w-100 d-md-none pb-3">
+                <div class="col-sm-1 mb-md-0 mb-3">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="https://api.whatsapp.com/send?phone=919409807975&text=Hi%20Yogesh%2c%0d%0a&source=&data=&app_absent=" ><i class="fa fa-whatsapp" style="font-size: 30px;color: #55cc55;" title="Message on Whatsapp"></i></a>   
+                        </li>
                     </ul>
                 </div>
+                <div class="col-sm-1 mb-md-0 mb-3">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="mailto:yogeshbavishi199@gmail.com?subject = Feedback&body = Message" ><i class="fa fa-envelope-o" style="font-size: 30px;color: #ff0000;" title="Send an Email"></i></a>   
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-1 mb-md-0 mb-3">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="https://www.linkedin.com/in/yogesh-bavishi/" ><i class="fa fa-linkedin-square" style="font-size: 30px;color: #0066ff;" title="LinkedIn Profile"></i></a>   
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-1 mb-md-0 mb-3">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="https://github.com/yogesh-b" ><i class="fa fa-github" style="font-size: 30px;color: #000000;" title="Github Profile"></i></a>   
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-1 mb-md-0 mb-3">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="https://www.freecodecamp.org/yogesh-b" ><i class="fa fa-free-code-camp" style="font-size: 30px;color: #1a0827;" title="FreeCodeCamp Profile"></i></a>   
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-1 mb-md-0 mb-3">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="https://t.me/YogeshBavishi1" ><i class="fa fa-telegram" style="font-size: 30px;color: #00b7ff;" title="Message On Telegram"></i></a>   
+                        </li>
+                    </ul>
+                </div>
+                
             </div>
         </div>
-            <!-- <a class="navbar-brand" href="#">Yogesh's Resume</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
-                <span class="navbar-toggler-icon"></span>
-            </button> -->
-            
-        
-    </nav>
-
-
-    <div class="row">
-        <section class="col-sm-12" id="about_me">
-            <h1>About Me</h1>
-            <p>this is content of col-*-*,this is content,this is content
-                ,this is content,this is content,this is content,this is content
-                ,this is content,this is content,this is content,this is content
-                ,this is content,this is content,this is content,this is content
-            </p>
-        </section>
-        <section class="col-sm-12" id="education">
-            <h1>Education</h1>
-            <p>this is content of col-*-*,this is content,this is content
-                ,this is content,this is content,this is content,this is content
-                ,this is content,this is content,this is content,this is content
-                ,this is content,this is content,this is content,this is content
-            </p>
-        </section>
-        <section class="col-sm-12" id="certificates">
-            <h1>Certificates</h1>
-            <p>this is content of col-*-*,this is content,this is content
-                ,this is content,this is content,this is content,this is content
-                ,this is content,this is content,this is content,this is content
-                ,this is content,this is content,this is content,this is content
-            </p>
-        </section>
-        <section class="col-sm-12" id="portfolio">
-            <h1>Portfolio </h1>
-            <p>this is content of col-*-*,this is content,this is content
-                ,this is content,this is content,this is content,this is content
-                ,this is content,this is content,this is content,this is content
-                ,this is content,this is content,this is content,this is content
-            </p>
-        </section>
-        <section class="col-sm-12" id="contact">
-            <h1>Contact </h1>
-            <p>this is content of col-*-*,this is content,this is content
-                ,this is content,this is content,this is content,this is content
-                ,this is content,this is content,this is content,this is content
-                ,this is content,this is content,this is content,this is content
-            </p>
-        </section>
-    </div>
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            Yogesh Bavishi
+        </div>
+    </footer>
 
 
 
+
+    <script type="text/javascript" src="./script1.js"></script>
 </body>
-
 </html>
